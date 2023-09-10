@@ -1,0 +1,54 @@
+.modal {
+    &.user-authentication {
+        .modal-dialog-centered {
+            max-width: 440px;
+        }
+        .modal-content {
+            background-color: var(--color__black_rich);   
+        }
+        .modal-header {
+            border: 0;
+            .modal-title {
+                font-size: 18px;
+            }
+            button {
+                background-color: transparent;
+                color: var(--color-white);
+                font-size: 20px;
+                border: 0;
+                outline: 0;
+            }
+        }
+        .modal-body {
+            label {
+                margin-bottom: 8px;
+                user-select: none;
+            }
+            .form-group {
+                margin-bottom: 10px;
+            }
+            .form-control {
+                background-color: #ced4da;
+                border: 0;
+                font-size: 16px;
+                color: var(--color__black);
+                height: 50px;
+                user-select: none;
+            }
+            .form-text {
+                display: block;
+
+                a {
+                    color: var(--color__theme1);
+                    &:hover {
+                        color: var(--color__text);
+                    }
+                }
+            }
+        }
+        .modal-footer {
+            border: 0;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+# Footer-block
+--------------------------------------------------------------*/
+footer {
+    background-color: #090909;
+    margin-top: -430px;
+
+    .footer-top {
+        padding: 60px 0;
+    }
+    .brand {
+        margin-bottom: 20px;
+        img {
+            max-width: 140px;
+        }
+    }
+    .footer-widget {
+        .brand-info {
+            @include xl-up {
+                max-width: 580px;
+            }
+        }
+        .social-links {
+            a {
+                @include transition-default;
+
+                &:hover {
+                    color: var(--color__white);
+                }
+            }
+        }
+        .widget-title {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+            margin-top: 20px;
+            color: var(--color__white);
+        }
+
+        .widget-links {
+            li {
+                line-height: 1.75;
+                a {
+                    color: #6c757d;
+                    @include transition-default;
+
+                    &:hover {
+                        color: var(--color__theme1);
+                    }
+                }
+            }
+        }
+    }
+}

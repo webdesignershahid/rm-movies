@@ -1,0 +1,11 @@
+.container {
+    @include xl-up {
+        max-width: 1200px;
+    }
+    @include xxl-up {
+        max-width: 1380px;
+    }
+    @media (min-width: 1680px) {
+        max-width: 1600px;
+    }
+}

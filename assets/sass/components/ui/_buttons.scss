@@ -1,0 +1,26 @@
+/*-------------------------------------------------
+    [ ## Buttons ]
+-------------------------------------------------*/
+button {
+	transition: all 0.25s ease;
+}
+.btn {
+    &:active:focus,
+    &:focus {
+       box-shadow: none;
+    }
+}
+.btn-theme {
+    border: 1px solid var(--color__theme1);
+    padding: 14px 30px;
+    border-radius: 6px;
+    display: inline-block;
+    background-color: var(--color__theme1);
+    color: var(--color__white);
+    @include transition-default;
+
+    @include sm-down {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
